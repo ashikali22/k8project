@@ -1,5 +1,7 @@
 FROM  centos:latest
 MAINTAINER asikali.hai@gmail.com
+RUN apt list --installed | grep apt-get
+RUN sudo apt install apt-get
 RUN sudo apt update
 RUN sudo yum install yum-utils
 RUN sudo yum-config-manager --enable base-appstream
