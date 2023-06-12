@@ -1,7 +1,8 @@
 FROM  centos:latest
 MAINTAINER asikali.hai@gmail.com
-RUN sudo apt-get update
-RUN sudo apt install sudo
+RUN sudo apt update
+RUN sudo yum install yum-utils
+RUN sudo yum-config-manager --enable base-appstream
 RUN sudo apt-get install -y httpd \
  zip\
  unzip
