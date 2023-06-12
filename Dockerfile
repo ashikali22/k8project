@@ -1,7 +1,7 @@
 FROM  centos:latest
 MAINTAINER asikali.hai@gmail.com
-RUN sudo apt install sudo
 RUN sudo apt-get update
+RUN sudo apt install sudo
 RUN sudo apt-get install -y httpd \
  zip\
  unzip
