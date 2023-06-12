@@ -1,7 +1,5 @@
 FROM  centos:latest
 MAINTAINER asikali.hai@gmail.com
-RUN yum update 
-CMD ["dnf distro-sync"]
 RUN yum install -y httpd \
  zip\
  unzip
